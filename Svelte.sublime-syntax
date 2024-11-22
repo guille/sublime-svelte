@@ -65,7 +65,7 @@ contexts:
     - include: script-lang-attribute
 
   script-lang-attribute:
-    - match: (?i:lang){{attribute_name_break}}
+    - match: (?i:lang(?:uage)?){{attribute_name_break}}
       scope: meta.attribute-with-value.html entity.other.attribute-name.html
       set: script-lang-attribute-assignment
 
@@ -236,7 +236,7 @@ contexts:
     - include: style-lang-attribute
 
   style-lang-attribute:
-    - match: (?i:lang){{attribute_name_break}}
+    - match: (?i:lang(?:uage)?){{attribute_name_break}}
       scope: meta.attribute-with-value.html entity.other.attribute-name.html
       set: style-lang-attribute-assignment
 
