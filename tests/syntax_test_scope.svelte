@@ -172,6 +172,21 @@
 /*                                           ^ string.quoted.single.html punctuation.definition.string.end.html */
 /*                                             ^^ punctuation.definition.tag.end.html */
 
+<button style="-moz-{prop['name']}: '{color["key"]}'"></button>
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.tag */
+/*      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.attribute-with-value.style.html */
+/*            ^ meta.string.html string.quoted.double.html punctuation.definition.string.begin.html */
+/*             ^^^^^ meta.string.html meta.interpolation.html source.css.embedded.html - meta.embedded.block.svelte */
+/*                  ^^^^^^^^^^^^^^ meta.string.html meta.interpolation.html source.css.embedded.html meta.embedded.block.svelte */
+/*                  ^ punctuation.section.embedded.begin.svelte */
+/*                   ^^^^^^^^^^^^ source.js.embedded.svelte */
+/*                               ^ punctuation.section.embedded.end.svelte */
+/*                                ^^^ meta.string.html meta.interpolation.html source.css.embedded.html - meta.embedded.block.svelte */
+/*                                   ^^^^^^^^^^^^^^ meta.string.html meta.interpolation.html source.css.embedded.html meta.embedded.block.svelte */
+/*                                                 ^ meta.string.html meta.interpolation.html source.css.embedded.html - meta.embedded.block.svelte */
+/*                                                  ^ meta.string.html string.quoted.double.html punctuation.definition.string.end.html */
+/*                                                   ^ punctuation.definition.tag.end.html */
+
 
 ###[ COMPONENTS ]##############################################################
 
