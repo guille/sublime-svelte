@@ -98,11 +98,6 @@ contexts:
         - script-livescript
         - tag-lang-attribute-meta
         - tag-generic-attribute-value
-    - match: (?i)(?=(?:js|javascript){{unquoted_attribute_break}}|'(?:js|javascript)'|"(?:js|javascript)")
-      set:
-        - script-javascript
-        - tag-lang-attribute-meta
-        - tag-generic-attribute-value
     - match: (?i)(?=(?:ts|typescript){{unquoted_attribute_break}}|'(?:ts|typescript)'|"(?:ts|typescript)")
       set:
         - script-typescript
