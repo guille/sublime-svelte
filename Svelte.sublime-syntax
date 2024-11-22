@@ -435,7 +435,15 @@ contexts:
   svelte-component-body:
     - meta_scope: meta.tag.component.html
     - include: tag-end-maybe-self-closing
-    - include: tag-attributes
+    # all tag-attributes (except `event` and `style`)
+    - include: svelte-string-attributes
+    - include: svelte-storage-attributes
+    - include: svelte-style-attributes
+    - include: svelte-variable-attributes
+    - include: tag-id-attribute
+    - include: tag-class-attribute
+    - include: tag-href-attribute
+    - include: tag-generic-attribute
 
 ###[ SVELTE TAG ATTRIBUTES ]###################################################
 
