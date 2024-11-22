@@ -13,7 +13,7 @@ variables:
 
   # script mimetypes
   babel_mime_type: (?:(?:text|application)/babel)
-  coffeescript_mime_type: (?:(?:text|application)/coffeescript)
+  coffeescript_mime_type: (?:(?:text|application)/coffee(?:script)?)
   livescript_mime_type: (?:(?:text|application)/livescript)
   typescript_mime_type: (?:(?:text|application)/typescript)
 
@@ -88,7 +88,7 @@ contexts:
         - script-babel
         - tag-generic-attribute-meta
         - tag-generic-attribute-value
-    - match: (?i)(?=coffeescript{{unquoted_attribute_break}}|'coffeescript'|"coffeescript")
+    - match: (?i)(?=coffee(?:script)?{{unquoted_attribute_break}}|'coffee(?:script)?'|"coffee(?:script)?")
       set:
         - script-coffeescript
         - tag-generic-attribute-meta
